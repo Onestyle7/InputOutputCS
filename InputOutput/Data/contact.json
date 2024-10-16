@@ -1,50 +1,16 @@
 [
   {
+    "contactId": 0,
     "FirstName": "John",
     "LastName": "Doe",
     "PhoneNumber": "123-456-7890",
     "Email": "JohnDoe@gmail.com"
   },
   {
-    "FirstName": "Jane",
-    "LastName": "Doe",
-    "PhoneNumber": "123-456-7890",
-    "Email": "Janedoe@gmail.com"
-  },
-  {
-    "FirstName": "John",
-    "LastName": "Doe",
-    "PhoneNumber": "123-456-7890",
-    "Email": ""
-  },
-  {
-    "FirstName": "Ted",
-    "LastName": "Doom",
-    "PhoneNumber": "723-455-7890",
-    "Email": "Ted@gmail.com"
-  },
-  {
-    "FirstName": "Ted",
-    "LastName": "Doom",
-    "PhoneNumber": "723-455-7890",
-    "Email": "Ted@gmail.com"
-  },
-  {
-    "FirstName": "Ted",
-    "LastName": "Doom",
-    "PhoneNumber": "723-455-7890",
-    "Email": "Ted@gmail.com"
-  },
-  {
-    "FirstName": "Ted",
-    "LastName": "Doom",
-    "PhoneNumber": "723-455-7890",
-    "Email": "Ted@gmail.com"
-  },
-  {
-    "FirstName": "test",
-    "LastName": "test",
-    "PhoneNumber": "test",
-    "Email": "1231"
+    "contactId": 2,
+    "FirstName": "Bartek",
+    "LastName": "Klus",
+    "PhoneNumber": "791000332",
+    "Email": "klsub@gmail.com"
   }
 ]
