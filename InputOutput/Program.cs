@@ -19,19 +19,44 @@ namespace InputOutput
                 Console.WriteLine($"Email: {contact.Email}");
                 Console.WriteLine("-----------------------------");
             }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
 
-            Contact newContact = new Contact
+            bool addMore = true;
+
+            while (addMore)
             {
-                FirstName = "Ted",
-                LastName = "Doom",
-                PhoneNumber = "723-455-7890",
-                Email = "Ted@gmail.com"
-            };
+                Console.WriteLine("Czy chcesz dodać kontakty? ");
+                Console.WriteLine("1.Tak/2.Nie");
+                if(Console.ReadLine() == "2")
+                {
+                    addMore = false;
+                    break;
+                }
+                Console.WriteLine("Podaj Imie:");
+                string firstName = Console.ReadLine();
+                Console.WriteLine("Podaj Nazwisko:");
+                string lastName = Console.ReadLine();
+                Console.WriteLine("Podaj Numer Telefonu:");
+                string phoneNumber = Console.ReadLine();
+                Console.WriteLine("Podaj Email:");
+                string email = Console.ReadLine();
 
-            contacts.Add(newContact);
+                Contact contact = new Contact
+                {
+                    FirstName = firstName,
+                    LastName = lastName,
+                    PhoneNumber = phoneNumber,
+                    Email = email
+                };
+                contacts.Add(contact);
+                Console.WriteLine("Kontakt został dodany.");
+            }
             dataAccess.WriteUserDefinedContacts(contacts);
             Console.WriteLine("Dodaje kontakty....");
-            Thread.Sleep(2000);
+
+            Thread.Sleep(1000);
+            Console.WriteLine("Kontakty zostały dodane do twojego pliku!");
 
             var lastContact = contacts.Last();
             Console.WriteLine("Ostatni kontakt dodany:");
